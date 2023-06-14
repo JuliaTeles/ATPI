@@ -37,12 +37,9 @@ int main() {
     } else if (numeros[i] > numeros[i - 1] && numeros[i] > numeros[i + 1]) {
       maximos[i] = numeros[i];
       qtdmaximos = i;
-    } else {
-      cout << "Não é máx \n";
     }
   }
 
-  cout << "Quantidade de máximos: \n" << qtdmaximos << endl;
   cout << "Máximos Locais: \n";
   for (int j = 0; j < quantidade; j++) {
     if (maximos[j] != 777) {
